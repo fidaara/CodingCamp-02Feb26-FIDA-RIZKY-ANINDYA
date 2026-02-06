@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Todo List</h2>
+
+    <div class="form">
+        <input type="text" id="todoInput" placeholder="Add a todo...">
+        <input type="date" id="dateInput">
+        <button id="addBtn">+</button>
+    </div>
+
+    <div class="actions">
+        <button id="filterBtn">Filter</button>
+        <button id="deleteAllBtn">Delete All</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="todoList">
+            <tr>
+                <td colspan="4" class="empty">No task found</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
